@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
+
 
 import { cn } from "@/lib/utils"
 
@@ -10,7 +10,6 @@ import {
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
   NavigationMenuTrigger,
   
 } from "@/components/ui/navigation-menu"
@@ -45,7 +44,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      
         
         <NavigationMenuItem>
           <NavigationMenuTrigger>
@@ -66,7 +65,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-      </NavigationMenuList>
+      
     </NavigationMenu>
   )
 }
