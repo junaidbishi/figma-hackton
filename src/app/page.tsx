@@ -1,16 +1,19 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import Header from "./components/header";
 import Herosection from "./components/herosection";
+import Fonts from "./components/fonts";
+import Products from "./products/page";
+import Top_selling from "./products/sells";
 
 export default function Home() {
   return (
 
-      <><Navbar />
-     <Header/>
+      <>
      <Herosection/>
+     <Fonts/>
+     <Products/>
+     <Top_selling/>
       </>
 
 
-  );
+  );    
 }

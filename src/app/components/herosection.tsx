@@ -1,47 +1,52 @@
+import Image from "next/image";
 
-import Image from "next/image"
+export default function Herosection() {
+  return (
+    <main className="w-full h-{500px} flex justify-betweennitem-start bg-[#F2F0F1]">
+      {/* leftside */}
+      <div className="w-{500px} mt-3 md:mt-10 ml-10 ">
+        <h1 className="text-2xl md:text-5xl font-extrabold">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+        <p className="text-sm mt-3 ">
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+          <button className ="bg-black py-2 px-8 rounded-[14px] mt-4 text-sm text-white">
+            Shop Now
+          </button>
+      </div>
 
+      {/* right */}
 
-export default function Herosection(){
-return(
-<main className="w-full h-{500px} flex justify-betweennitem-start bg-{#f2f0f1}">
-        {/* leftside */}
-<div className="w-{500px}">
-        <h1 className="text-2xl md:text-5xl font-extrabold"> FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-       <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+      <div>
+        <Image
+          src="/pic-one.png"
+          className="w-[500px]  mr-4"
+          width={1440}
+          height={663}
+          alt="pic-one"
+          
+        ></Image>
+  
+        {/* {star-one} */}
+<Image
+          src="/big-star.png"
+          className="w-[100px] absolute  top-[100px]  rght-[200px] left-[1250px] "
+          width={104}
+          height={104}
+          alt=""
+          
+        ></Image>
 
-       <div>
-            <button className="w-full md:w-52 mb-5 md:mb-12 inline-block text-center bg-black hover:bg-black/80 transition-all text-white px-14 py-4 rounded-full">
-              Shop Now
-            </button>
-          </div>
-
+<Image
+          src="/images/small-star.png"
+          className="w-[56px] h-[56px] absolute  top-[250px]  rght-[60px] "
+          width={89}
+          height={77}
+          alt="big-star">
+       </Image>
 
 </div>
-
-{/* right */}
-
-<div>
-<Image src= "/pic-one.png"
- width= {200} 
- height= {200}
- alt= "pic-one">
-  </Image>
-
-
-</div>
-
-
-        
-</main>
-
-
-
-
-)
-
-
-
-
-
-};
+    </main>
+  );
+}
