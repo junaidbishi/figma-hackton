@@ -3,7 +3,7 @@ import {Playfair_Display,Cinzel,Bodoni_Moda,Prata,Montserrat} from "next/font/go
 
 const Playfair = Playfair_Display({subsets:["latin"]});
 const Cinze = Cinzel({subsets:["latin"]});
-const Bodoni = Bodoni_Moda({subsets:["latin"]});
+const Bodon = Bodoni_Moda({subsets:["latin"]});
 const Prat = Prata({subsets:["latin"],weight:"400"});
 const Montserra = Montserrat({subsets:["latin"]});
 
