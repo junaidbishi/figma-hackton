@@ -3,6 +3,12 @@ import Herosection from "./components/herosection";
 import Fonts from "./components/fonts";
 import Products from "./products/page";
 import Top_selling from "./products/sells";
+import Dress_style from "./components/dress_style";
+import CustomerCarousel from "@/components/ui/corouel";
+
+
+
+
 
 export default function Home() {
   return (
@@ -12,6 +18,9 @@ export default function Home() {
      <Fonts/>
      <Products/>
      <Top_selling/>
+     <Dress_style/>
+     <CustomerCarousel/>
+     
       </>
 
 

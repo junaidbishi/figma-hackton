@@ -23,7 +23,7 @@ export function SheetSide() {
       {SHEET_SIDES.map((side) => (
         <Sheet key={side}>
           <SheetTrigger asChild className="md:hidden">
-            <Button >
+            <Button  variant={"secondary"}>
             <FiMenu />
             </Button>
           </SheetTrigger>

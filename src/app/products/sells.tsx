@@ -47,7 +47,7 @@ let rating = [<FaStar />, <FaStar />, <FaStar />, <FaStar />];
 
 export default function Top_selling() {
   return (
-    <div className="w-full h-[500px] mt-7">
+    <div className="w-full h-full sm:h-[500px] mt-7 max-w-screen-2xl mx-auto">
       <h1 className="text-3xl md:text-4xl font-bold text-center">
       Top selling
       </h1>

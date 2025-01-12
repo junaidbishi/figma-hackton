@@ -45,16 +45,16 @@ let product: Iproduct[] = [
 
 let rating = [<FaStar />, <FaStar />, <FaStar />, <FaStar />];
 
-export default function Products() {
+export default function More_product() {
   return (
-    <div className="w-full sm:h-[500px] mt-7 max-w-screen-2xl mx-auto">
-      <h1 className="text-3xl md:text-4xl font-bold text-center">
-        NEW ARRIVALS
+    <div className="w-full h-full sm:h-[500px] mt-7 max-w-screen-2xl mx-auto">
+      <h1 className="text-5xl md:text-4xl font-extrabold text-center">
+      YOU MIGHT ALSO LIKE
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-between px-8 mt-10">
         {product.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <Link href={`/products/${data.id}`}>
               <div className="w-[230px] h-[230px] bg-[#F0EEED] rounded-[20px]">
                 <Image
@@ -65,6 +65,10 @@ export default function Products() {
                   className="w-full h-full rounded-[20px]"
                 ></Image>
               </div>
+              
+              
+              
+              
               </Link>
               <div>
                 <p className="text-1xl mt-2 font-bold">{data.title}</p>

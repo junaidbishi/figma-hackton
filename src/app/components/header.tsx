@@ -11,11 +11,11 @@ import { NavigationMenuDemo } from "./navigationmenu";
 export default function Header() {
   return (
 // left
-   <header className="w-full  h-[60px] bg-slate-50 flex justify-between items-center">
+   <header className="w-full  h-[60px] bg-slate-50 flex justify-between items-center max-w-screen-2xl mx-auto">
 
     <div className="flex justify-center items-center">
    < SheetSide />
-    <h1 className="text-xl sm:text-3xl font-bold">SHOP.CO</h1>
+    <h1 className="text-xl sm:text-3xl font-bold mr-3">SHOP.CO</h1>
 
     </div>
     {/* navbar */}

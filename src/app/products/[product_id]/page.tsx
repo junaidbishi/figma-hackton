@@ -4,13 +4,15 @@ import Link from "next/link";
 import { FaStar } from "react-icons/fa6";
 import { useParams } from "next/navigation";
 import { Check, Minus, Plus } from "lucide-react";
+import All_review from "@/app/components/all_review";
+import More_product from "@/app/components/more_product";
+import { BreadcrumbDemo } from "@/app/components/breadcrumb";
 let rating = [<FaStar />, <FaStar />, <FaStar />, <FaStar />];
 
 interface Iproduct {
   title: string;
   price: string;
   id: number;
-  // rating:string,
   old_price?: string;
   img_url: string;
   img1: string;
@@ -68,6 +70,7 @@ let product: Iproduct[] = [
 ];
 
 export default function Product_detail() {
+
   const params = useParams();
   const id = params.product_id;
   const item = product.find((item) => item.id === Number(id));
@@ -76,7 +79,9 @@ export default function Product_detail() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row justify-center sm:justify-evenly sm:mt-10 p-5 sm:p-0">
+    <>
+    <BreadcrumbDemo/>
+    <div className="flex flex-col md:flex-row justify-center sm:justify-evenly sm:mt-10 p-5 sm:p-0 max-w-screen-2xl mx-auto">
       {/* left */}
       <div className="flex sm:flex-col justify-between items-center  sm:w-[152px] order-2 sm:order-1">
         {/* images */}
@@ -143,5 +148,8 @@ export default function Product_detail() {
       </div>
       </div>
     </div>
+    <All_review/>
+    <More_product/>
+    </>
   );
 }

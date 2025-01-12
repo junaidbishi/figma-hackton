@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function Herosection() {
   return (
-    <main className="w-full h-{500px} flex justify-betweennitem-start bg-[#F2F0F1]">
+    <main className="w-full h-{500px} max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between item-start bg-[#F2F0F1]">
       {/* leftside */}
       <div className="w-{500px} mt-3 md:mt-10 ml-10 ">
         <h1 className="text-2xl md:text-5xl font-extrabold">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-        <p className="text-sm mt-3 ">
+        <p className="text-lg mt-3">
           Browse through our diverse range of meticulously crafted garments,
+          <br/>
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
