@@ -77,9 +77,9 @@ export default function All_review(){
              <div>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 mt-3 md:mt-0">
                   {
-                    Review.map((data)=>{
+                    Review.map((data,i)=>{
                       return (
-                             <div className=" border p-5 rounded-[20px]"key={1}>
+                             <div className=" border p-5 rounded-[20px]"key={i}>
                                <div className="flex text-yellow-400">
                                     {star.map((icon, index) => (
                                         <span key={index}>{icon}</span>
