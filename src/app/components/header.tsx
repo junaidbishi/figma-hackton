@@ -1,10 +1,11 @@
 import { SheetSide } from "@/components/sheet";
-import Link from "next/link";
+
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoIosContact } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { NavigationMenuDemo } from "./navigationmenu";
+import Link from "next/link";
 
 
 
@@ -23,9 +24,9 @@ export default function Header() {
     <li className="space-x-5 flex items-center">
 
         <Link href={""}> <NavigationMenuDemo/></Link>
-        <Link href={""}>On sale</Link>
-        <Link href={""}>New arrival</Link>
-        <Link href={""}>Brands</Link>
+        <Link href={"/"}>On sale</Link>
+        <Link href={"products"}>New arrival</Link>
+        <Link href={"/"}>Brands</Link>
     </li>
 
     </ul>
@@ -39,9 +40,13 @@ export default function Header() {
 
 </div>
 </div>
+{/* cart */}
 <div className="flex items-center mr-5 space-x-3">
-
+  <IoSearch className=" text -xl ml-2 md:hidden"/>
+<Link href={"/cart"}>
 <FiShoppingCart className="text-xl"/>
+</Link>
+
 <IoIosContact className="text-xl"/>
 
 </div>

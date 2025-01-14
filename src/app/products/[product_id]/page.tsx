@@ -81,7 +81,7 @@ export default function Product_detail() {
   return (
     <>
     <BreadcrumbDemo/>
-    <div className="flex flex-col md:flex-row justify-center sm:justify-evenly sm:mt-10 p-5 sm:p-0 max-w-screen-2xl mx-auto">
+    <div className="flex flex-col md:flex-row justify-center sm:justify-evenly sm:mt-10 p-6 sm:p-0 max-w-screen-2xl mx-auto">
       {/* left */}
       <div className="flex sm:flex-col justify-between items-center  sm:w-[152px] order-2 sm:order-1">
         {/* images */}
@@ -102,7 +102,7 @@ export default function Product_detail() {
       </div>
 
       {/*  right div */}
-      <div className="w-full sm:w-[600px] h-[500px] mt-3 order-3">
+      <div className="w-full sm:w-[600px] h-[500px] mt-3 order-3 ">
         <h1 className="text-2xl md:text-3xl font-bold">One Life Graphic T-shirt</h1>
         <div className="flex text-yellow-500">{rating}</div>
         <p className="font-bold mt-1">

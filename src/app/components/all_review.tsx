@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Key } from "lucide-react";
 import { FaStar } from "react-icons/fa6";
 
 
@@ -77,14 +77,15 @@ export default function All_review(){
              <div>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 mt-3 md:mt-0">
                   {
-                    Review.map((data,i)=>{
+                    Review.map((data)=>{
                       return (
-                             <div className=" border p-5 rounded-[20px]" key={i}>
+                             <div className=" border p-5 rounded-[20px]">
                                <div className="flex text-yellow-400">
                                     {star.map((icon, index) => (
                                         <span key={index}>{icon}</span>
                                     ))}
-                                </div>                              <h2 className="font-bold text-xl mt-1 flex">{data.name} <Check className="bg-green-500  rounded-full text-white"/> </h2>
+                                </div>
+                                 <h2 className="font-bold text-xl mt-1 flex">{data.name} <Check className="bg-green-500  rounded-full text-white"/> </h2>
                               <p className="text-sm">{data.feedback}</p>
                               <p className="mt-5 text-gray-400">{data.date}</p>
                              </div>

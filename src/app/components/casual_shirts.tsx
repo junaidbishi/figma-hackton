@@ -41,22 +41,59 @@ let product: Iproduct[] = [
     price: "$120",
     img_url: "/product-four.png",
   },
+
+  {
+    title: "CHECKERED SHIRT",
+    id: 3,
+    price: "$120",
+    img_url: "/product-three.png",
+    old_price: "$260",
+  },
+
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 4,
+    price: "$120",
+    img_url: "/product-four.png",
+  },
+
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 4,
+    price: "$120",
+    img_url: "/product-four.png",
+  },
+
+  {
+    title: "CHECKERED SHIRT",
+    id: 3,
+    price: "$120",
+    img_url: "/product-three.png",
+    old_price: "$260",
+  },
+
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 4,
+    price: "$120",
+    img_url: "/product-four.png",
+  },
 ];
 
 let rating = [<FaStar />, <FaStar />, <FaStar />, <FaStar />];
 
-export default function Products() {
+export default function casual_shirts() {
   return (
     <div className="w-full sm:h-[500px] mt-7 max-w-screen-2xl mx-auto">
       <h1 className="text-3xl md:text-4xl font-bold text-center">
         NEW ARRIVALS
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-between px-8 mt-10">
+      <div className="flex flex-wrap flex-col md:flex-row items-center justify-between px-8 mt-10">
         {product.map((data) => {
           return (
             <div>
               <Link href={`/products/${data.id}`}>
-              <div className="w-[290px] h-[290px] md:w-[190px] md:h-[190px] bg-[#F0EEED] rounded-[20px]">
+              <div className="w-[230px] h-[230px] bg-[#F0EEED] rounded-[20px]">
                 <Image
                   src={data.img_url}
                   alt={data.title}
@@ -70,7 +107,7 @@ export default function Products() {
                 <p className="text-1xl mt-2 font-bold">{data.title}</p>
                 <p className="flex text-yellow-300">{rating}</p>
                 <p className="font-bold mt-1">
-                  {data.price}{" "}
+                  {data.price}
                   <span className="text-gray-400 line-through font-bold">
                     {data.old_price}
                   </span>
