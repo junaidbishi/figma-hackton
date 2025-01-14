@@ -79,7 +79,7 @@ export default function All_review(){
                   {
                     Review.map((data)=>{
                       return (
-                             <div className=" border p-5 rounded-[20px]">
+                             <div className=" border p-5 rounded-[20px]"key={1}>
                                <div className="flex text-yellow-400">
                                     {star.map((icon, index) => (
                                         <span key={index}>{icon}</span>
