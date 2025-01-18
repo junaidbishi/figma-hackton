@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Key } from "lucide-react";
+import { Check,} from "lucide-react";
 import { FaStar } from "react-icons/fa6";
 
 
@@ -54,7 +54,7 @@ const Review = [
     },
   ];
 // Adding key prop in star array
-let star = [
+const star = [
     <FaStar key={1} />,
     <FaStar key={2} />,
     <FaStar key={3} />,
