@@ -5,7 +5,7 @@ import Image from "next/image"
 import { BreadcrumbDemo } from "../components/breadcrumb"
 
 interface Icart {
-    imageurl:string,
+    img_url:string,
     title:string,
     id:number
     size:string,
@@ -14,7 +14,7 @@ interface Icart {
 }
 const cartItem:Icart[] = [
     {
-     imageurl:"/product1.png",
+    img_url:"/product-one.png",
     title:"Gradient Graphic T-shirt",
     id:1,
     size:"large",
@@ -22,21 +22,21 @@ const cartItem:Icart[] = [
     price:"$120",
     },
     {
-     imageurl:"/product2.png",
-    title:"Gradient Graphic T-shirt",
-    id:2,
-    size:"large",
-    color:"white",
-    price:"$120",
-    },
-    {
-     imageurl:"/product3.png",
-    title:"Gradient Graphic T-shirt",
-    id:3,
-    size:"large",
-    color:"white",
-    price:"$120",
-    }
+        img_url:"/product-one.png",
+        title:"Gradient Graphic T-shirt",
+        id:1,
+        size:"large",
+        color:"white",
+        price:"$120",
+        },
+        {
+            img_url:"/product-three.png",
+            title:"Gradient Graphic T-shirt",
+            id:1,
+            size:"large",
+            color:"white",
+            price:"$120",
+            },
 ]
 
 export default function Cart(){
@@ -55,7 +55,7 @@ export default function Cart(){
                             return(
                                 <div className="flex justify-between  mt-4 p-4 border-b" key={item.id}>
                                    <div className="flex gap-3">
-                                   <Image src={item.imageurl} alt={item.title} className="rounded-[16px]" width={100} height={100}></Image>
+                                   <Image src={item.img_url} alt={item.title} className="rounded-[16px]" width={100} height={100}></Image>
                                       <div>    
                                           <h3 className="font-bold">{item.title}</h3>
                                           <p className="text-sm">Size:{item.size}</p>
