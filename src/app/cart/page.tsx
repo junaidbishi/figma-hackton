@@ -37,6 +37,15 @@ const cartItem:Icart[] = [
             color:"white",
             price:"$120",
             },
+
+            {
+                img_url:"/product-three.png",
+                title:"Gradient Graphic T-shirt",
+                id:1,
+                size:"large",
+                color:"white",
+                price:"$120",
+                },
 ]
 
 export default function Cart(){
