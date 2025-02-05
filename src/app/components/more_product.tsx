@@ -11,7 +11,7 @@ interface Iproduct {
   img_url: string;
 }
 
-let product: Iproduct[] = [
+const product: Iproduct[] = [
   {
     title: "T-SHIRT WITH TAPE DETAILS",
     id: 1,
@@ -43,7 +43,8 @@ let product: Iproduct[] = [
   },
 ];
 
-let rating = [<FaStar />, <FaStar />, <FaStar />, <FaStar />];
+const rating = [<FaStar key={1} />, <FaStar key={2} />, <FaStar key={3} />, <FaStar key={4} />];
+
 
 export default function More_product() {
   return (

@@ -9,7 +9,7 @@ import More_product from "@/app/components/more_product";
 import { Button } from "@/components/ui/button";
 
 
-let star = [
+const star = [
   <FaStar key={1} />,
   <FaStar key={2} />,
   <FaStar key={3} />,
@@ -29,7 +29,7 @@ interface Iproduct {
   img4: string;
 }
 
-let product: Iproduct[] = [
+const product: Iproduct[] = [
   {
     title: "T-SHIRT WITH TAPE DETAILS",
     id: 1,

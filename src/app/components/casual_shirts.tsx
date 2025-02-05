@@ -14,7 +14,7 @@ interface Iproducts{
   img3:string,
 }
 
-let product:Iproducts[] = [
+const product:Iproducts[] = [
   {
     title:"T-SHIRT WITH TAPE DETAILS",
     id:1,
@@ -113,7 +113,7 @@ let product:Iproducts[] = [
    
 ];
 
-let star = [
+const star = [
   <FaStar key={1} />,
   <FaStar key={2} />,
   <FaStar key={3} />,

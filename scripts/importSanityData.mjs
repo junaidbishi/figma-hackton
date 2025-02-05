@@ -1,5 +1,6 @@
 import { createClient } from '@sanity/client';
 
+
 const client = createClient({
   projectId: "bv4auy6e",
   dataset: 'production',
@@ -42,17 +43,21 @@ async function uploadProduct(product) {
         name: product.name,
         description: product.description,
         price: product.price,
+       
         image: {
-          _type: 'image',
+        
           asset: {
-            _ref: imageId,
+            _ref: string,
+            _type: "image",
           },
         },
+      
         category: product.category,
         discountPercent: product.discountPercent,
         isNew: product.isNew,
         colors: product.colors,
-        sizes: product.sizes
+        sizes: product.sizes,
+     
       };
 
       const createdProduct = await client.create(document);

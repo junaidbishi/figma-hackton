@@ -32,6 +32,7 @@ const ProductCards: React.FC = () => {
             *[_type == "Products"]{
             
             _id,
+            name,
             title,
             price,
             description,
@@ -67,13 +68,13 @@ const ProductCards: React.FC = () => {
     // main-div
     <div className="p-4">
       <h2 className="text-center text-slate-800 mt-4 mb-2">
-        Products From API's Data
+        Products From API&apos; Data
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {Products.map((product) => (
           <div
             key={product._id}
-            className=" bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
+            className=" bg-black shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
           >
             <Image
               src={product.imageUrl}
